@@ -29,7 +29,12 @@ class Hotel {
 
     }
     private void initializeDefaultRooms() {
-
+        rooms.add(new StandardRoom(101, 500));
+        rooms.add(new StandardRoom(102, 500));
+        rooms.add(new StandardRoom(103, 500));
+        rooms.add(new DeluxeRoom(201, 1000));
+        rooms.add(new DeluxeRoom(202, 1000));
+        System.out.println("ℹ️ Default rooms initialized.");
     }
 
 
