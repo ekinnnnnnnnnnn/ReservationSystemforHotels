@@ -13,6 +13,10 @@ abstract class Room implements Reservable {
 
     public int getRoomNumber() { return roomNumber; }
     public boolean isAvailable() { return isAvailable; }
+
+    public void setAvailability(boolean isAvailable) {
+        this.isAvailable = isAvailable;
+    }
     
     @Override
     public void reserve() {

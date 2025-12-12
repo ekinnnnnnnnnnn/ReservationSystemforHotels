@@ -16,12 +16,12 @@ class Reservation {
     }
 
     public Room getRoom() { return room; }
+    public Customer getCustomer() { return customer; }
+    public double getTotalPrice() { return totalPrice; }
 
     @Override
     public String toString() {
-               "Customer: " + customer.getName() + 
-               "Room: " + room.getRoomNumber() + 
-               "Price: " + totalPrice + " TL";
+        return "Customer: " + customer.getName() + " Room: " + room.getRoomNumber() + " Price: " + getTotalPrice() + " TL";
     }
 
     public String toCSV() {
